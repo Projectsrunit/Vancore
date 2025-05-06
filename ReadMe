@@ -1,0 +1,149 @@
+<!-- Pricing Section -->
+    <section class="pricing-section">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h5 class="text-uppercase text-muted mb-3">Pricing</h5>
+                <h2 class="display-5 fw-bold mb-3">Our affordable, fair pricing</h2>
+                <p class="lead text-muted">Choose a free plan or pick the subscription plan that fits your business needs</p>
+            </div>
+            
+            <div class="d-flex justify-content-center mb-4">
+                <div class="btn-group" role="group">
+                    <button type="button" class="btn btn-outline-primary active">Monthly</button>
+                    <button type="button" class="btn btn-outline-primary">Bi-Quarterly</button>
+                    <button type="button" class="btn btn-outline-primary">Yearly</button>
+                </div>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="pricing-card h-100">
+                        <div class="card-body p-4">
+                            <h5 class="card-title fw-bold">Starter</h5>
+                            <h6 class="card-subtitle mb-3 text-muted">$0 / month</h6>
+                            <ul class="list-unstyled mb-4">
+                                <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>Feature 1</li>
+                                <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>Feature 2</li>
+                                <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>Limited Access</li>
+                            </ul>
+                            <a href="#" class="btn btn-vancore btn-vancore-outline w-100">Get Started</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4">
+                    <div class="pricing-card popular h-100">
+                        <div class="card-body p-4">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <h5 class="card-title fw-bold">Standard</h5>
+                                <span class="badge bg-warning text-dark">Most Popular</span>
+                            </div>
+                            <h6 class="card-subtitle mb-3 text-muted">$19 / month</h6>
+                            <ul class="list-unstyled mb-4">
+                                <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>All Starter Features</li>
+                                <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>Advanced Reporting</li>
+                                <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>Priority Support</li>
+                            </ul>
+                            <a href="#" class="btn btn-vancore btn-vancore-primary w-100">Select Plan</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4">
+                    <div class="pricing-card h-100">
+                        <div class="card-body p-4">
+                            <h5 class="card-title fw-bold">Enterprise</h5>
+                            <h6 class="card-subtitle mb-3 text-muted">$49 / month</h6>
+                            <ul class="list-unstyled mb-4">
+                                <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>All Standard Features</li>
+                                <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>Custom Integrations</li>
+                                <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>Dedicated Account Manager</li>
+                            </ul>
+                            <a href="#" class="btn btn-vancore btn-vancore-outline w-100">Contact Us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    /* Pricing Section */
+.pricing-section {
+    padding: 100px 0;
+    background-color: var(--gray-light);
+}
+
+.pricing-card {
+    border: none;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-sm);
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+.pricing-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.pricing-card.popular {
+    border: 2px solid var(--primary);
+}
+
+
+
+/* Features Section */
+.features-section {
+    padding: 100px 0;
+}
+
+.feature-card {
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+    margin-bottom: 30px;
+    transition: all 0.3s ease;
+    min-height: 350px;
+}
+
+.feature-1 {
+    background: url('../images/Features\ Section\ Assets/Container.png');
+}
+
+.feature-card-2 {
+    background: url('../images/Features\ Section\ Assets/Container-2.png');
+}
+
+.feature-3 {
+    background: url('../images/Features\ Section\ Assets/Container-4.png');
+}
+
+.feature-4 {
+    background: url('../images/Features\ Section\ Assets/Container-5.png');
+}
+
+.feature-5 {
+    background: url('../images/Features\ Section\ Assets/Container-7.png');
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+
+.feature-img {
+    width: 100%;
+    object-fit: cover;
+    height: 600px;
+    border-radius: 5px;
+}
+
+.feature-card .col-md-5 {
+    padding: 15px;
+}
+
+.feature-card .p-5 {
+    padding: 15px;
+    width: 50%;
+}
