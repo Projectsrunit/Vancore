@@ -266,33 +266,31 @@ document.addEventListener("DOMContentLoaded", function () {
         svg.appendChild(line);
     }
 
-    // Improved curved line with Bézier curves
-    function drawSmoothCurve(from, to, direction, curveIntensity = 100) {
+    // Draw curved right-angle line (with smooth corner)
+    function drawCurvedLine(from, via, to, radius = 20) {
         const path = document.createElementNS("http://www.w3.org/2000/svg", "path");
-        
-        // Calculate control points based on direction
-        let cp1x, cp1y, cp2x, cp2y;
-        
-        if (direction === 'up') {
-            // Curve upward
-            const midY = Math.min(from.y, to.y) - curveIntensity;
-            cp1x = from.x;
-            cp1y = midY;
-            cp2x = to.x;
-            cp2y = midY;
+
+        const dx = via.x - from.x;
+        const dy = via.y - from.y;
+
+        // First move to start
+        let d = `M ${from.x},${from.y} `;
+
+        // Then vertical or horizontal line depending on the direction
+        if (Math.abs(dx) < 1) {
+            // Vertical then curve
+            const verticalEndY = via.y - (dy > 0 ? radius : -radius);
+            d += `L ${from.x},${verticalEndY} `;
+            d += `Q ${via.x},${via.y} ${via.x + (dx > 0 ? radius : -radius)},${via.y} `;
         } else {
-            // Curve downward
-            const midY = Math.max(from.y, to.y) + curveIntensity;
-            cp1x = from.x;
-            cp1y = midY;
-            cp2x = to.x;
-            cp2y = midY;
+            // Horizontal then curve
+            const horizontalEndX = via.x - (dx > 0 ? radius : -radius);
+            d += `L ${horizontalEndX},${from.y} `;
+            d += `Q ${via.x},${via.y} ${via.x},${via.y + (dy > 0 ? radius : -radius)} `;
         }
 
-        const d = `M ${from.x} ${from.y} 
-                  C ${cp1x} ${cp1y}, 
-                    ${cp2x} ${cp2y}, 
-                    ${to.x} ${to.y}`;
+        // Final line to destination
+        d += `L ${to.x},${to.y}`;
 
         path.setAttribute("d", d);
         path.setAttribute("stroke", "#6c757d");
@@ -302,7 +300,6 @@ document.addEventListener("DOMContentLoaded", function () {
         svg.appendChild(path);
     }
 
-    // Get all center positions
     const vancore = getCenter(document.getElementById("vancore-logo"));
     const instagram = getCenter(document.getElementById("instagram-icon"));
     const x = getCenter(document.getElementById("x-icon"));
@@ -317,51 +314,19 @@ document.addEventListener("DOMContentLoaded", function () {
     // Straight line: Instagram → X
     drawDashedLine(instagram.x, instagram.y, x.x, x.y);
 
-    // Calculate junction points
-    const junction1 = {
-        x: (vancore.x + instagram.x) / 2,
-        y: (vancore.y + instagram.y) / 2
-    };
+    // Curved right-angle: Between Vancore & Instagram → LinkedIn (UP)
+    const via1 = { x: (vancore.x + instagram.x) / 2, y: (vancore.y + instagram.y) / 2 - 90 };
+    drawCurvedLine({ x: (vancore.x + instagram.x) / 3, y: (vancore.y + instagram.y) / 2 }, via1, linkedin);
 
-    const junction2 = {
-        x: (instagram.x + x.x) / 2,
-        y: (instagram.y + x.y) / 2
-    };
+    // Curved right-angle: Between Vancore & Instagram → Google (DOWN)
+    const via2 = { x: (vancore.x + instagram.x) / 2, y: (vancore.y + instagram.y) / 2 + 90 };
+    drawCurvedLine({ x: (vancore.x + instagram.x) / 3, y: (vancore.y + instagram.y) / 2 }, via2, google);
 
-    // Smooth curves from junctions
-    drawSmoothCurve(junction1, linkedin, 'up', 80);
-    drawSmoothCurve(junction1, google, 'down', 80);
-    drawSmoothCurve(junction2, stack, 'up', 60);
-    drawSmoothCurve(junction2, whatsapp, 'down', 60);
+    // Curved right-angle: Between Instagram & X → Stack (UP)
+    const via3 = { x: (instagram.x + x.x) / 2, y: (instagram.y + x.y) / 2 - 90 };
+    drawCurvedLine({ x: (instagram.x + x.x) / 2, y: (instagram.y + x.y) / 2 }, via3, stack);
 
-    // Redraw on resize
-    window.addEventListener('resize', function() {
-        svg.innerHTML = '';
-        // Recalculate and redraw all lines
-        const vancore = getCenter(document.getElementById("vancore-logo"));
-        const instagram = getCenter(document.getElementById("instagram-icon"));
-        const x = getCenter(document.getElementById("x-icon"));
-        const linkedin = getCenter(document.getElementById("linkedin-icon"));
-        const google = getCenter(document.getElementById("google-icon"));
-        const stack = getCenter(document.getElementById("stack-icon"));
-        const whatsapp = getCenter(document.getElementById("whatsapp-icon"));
-
-        drawDashedLine(vancore.x, vancore.y, instagram.x, instagram.y);
-        drawDashedLine(instagram.x, instagram.y, x.x, x.y);
-
-        const junction1 = {
-            x: (vancore.x + instagram.x) / 2,
-            y: (vancore.y + instagram.y) / 2
-        };
-
-        const junction2 = {
-            x: (instagram.x + x.x) / 2,
-            y: (instagram.y + x.y) / 2
-        };
-
-        drawSmoothCurve(junction1, linkedin, 'up', 80);
-        drawSmoothCurve(junction1, google, 'down', 80);
-        drawSmoothCurve(junction2, stack, 'up', 60);
-        drawSmoothCurve(junction2, whatsapp, 'down', 60);
-    });
+    // Curved right-angle: Between Instagram & X → WhatsApp (DOWN)
+    const via4 = { x: (instagram.x + x.x) / 2, y: (instagram.y + x.y) / 2 + 60 };
+    drawCurvedLine({ x: (instagram.x + x.x) / 2, y: (instagram.y + x.y) / 2 }, via4, whatsapp);
 });

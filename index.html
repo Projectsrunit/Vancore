@@ -13,42 +13,41 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-X02XVCRCQH"></script>
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <!-- Custom CSS -->
-     <!-- Swiper CSS -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
-
     <link rel="stylesheet" href="css/styles.css">
     <style>
-        
+
     </style>
 </head>
 
 <body>
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-vancore sticky-top">
-        <div class="container">
-            <!-- Brand/logo -->
-            <a class="navbar-brand" href="#">
+        <div class="container-fluid"> <a class="navbar-brand" href="#">
                 <img src="images/Vancore-logo.png" alt="Vancore Logo">
             </a>
-            
-            <!-- Mobile toggle -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+                aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            
-            <!-- Navbar content -->
+
             <div class="collapse navbar-collapse" id="navbarContent">
                 <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="featuresDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="#" id="featuresDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
                             Features
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="featuresDropdown">
                             <li>
                                 <a class="dropdown-item" href="#">
                                     <div class="dropdown-item-content">
-                                        <div class="icon-wrapper">
+                                        <div class="icon-wrapper" style="background: #ECECFF; color: #7576F6;">
                                             <i class="fas fa-globe"></i>
                                         </div>
                                         <div class="dropdown-text">
@@ -61,7 +60,7 @@
                             <li>
                                 <a class="dropdown-item" href="#">
                                     <div class="dropdown-item-content">
-                                        <div class="icon-wrapper">
+                                        <div class="icon-wrapper" style="background: #E7EFFF; color: #7576F6;">
                                             <i class="fas fa-store"></i>
                                         </div>
                                         <div class="dropdown-text">
@@ -74,7 +73,7 @@
                             <li>
                                 <a class="dropdown-item" href="#">
                                     <div class="dropdown-item-content">
-                                        <div class="icon-wrapper">
+                                        <div class="icon-wrapper" style="background: #EBFFEC; color: #289D22;">
                                             <i class="fas fa-users"></i>
                                         </div>
                                         <div class="dropdown-text">
@@ -87,7 +86,7 @@
                             <li>
                                 <a class="dropdown-item" href="#">
                                     <div class="dropdown-item-content">
-                                        <div class="icon-wrapper">
+                                        <div class="icon-wrapper" style="background: #FFF6EB; color: #F59621;">
                                             <i class="fas fa-file-invoice-dollar"></i>
                                         </div>
                                         <div class="dropdown-text">
@@ -100,7 +99,7 @@
                             <li>
                                 <a class="dropdown-item" href="#">
                                     <div class="dropdown-item-content">
-                                        <div class="icon-wrapper">
+                                        <div class="icon-wrapper" style="background: #FFECFE; color: #EB32DF;">
                                             <i class="fas fa-link"></i>
                                         </div>
                                         <div class="dropdown-text">
@@ -123,11 +122,11 @@
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Company</a>
-                        <ul class="dropdown-menu">
+                        <ul class="dropdown-menu" style="height: 294px;">
                             <li>
                                 <a class="dropdown-item" href="#">
                                     <div class="dropdown-item-content">
-                                        <div class="icon-wrapper">
+                                        <div class="icon-wrapper" style="background: #E7EFFF; color: #7576F6;">
                                             <i class="fas fa-info-circle"></i>
                                         </div>
                                         <div class="dropdown-text">
@@ -140,7 +139,7 @@
                             <li>
                                 <a class="dropdown-item" href="#">
                                     <div class="dropdown-item-content">
-                                        <div class="icon-wrapper">
+                                        <div class="icon-wrapper" style="background: #EBFFEC; color: #289D22;">
                                             <i class="fas fa-briefcase"></i>
                                         </div>
                                         <div class="dropdown-text">
@@ -153,7 +152,7 @@
                             <li>
                                 <a class="dropdown-item" href="#">
                                     <div class="dropdown-item-content">
-                                        <div class="icon-wrapper">
+                                        <div class="icon-wrapper" style="background: #FFF6EB; color: #F59621;">
                                             <i class="fas fa-blog"></i>
                                         </div>
                                         <div class="dropdown-text">
@@ -166,29 +165,38 @@
                         </ul>
                     </li>
                 </ul>
-                
-                <!-- Right side buttons -->
+
                 <div class="navbar-buttons d-flex">
-                    <a href="#" class="btn btn-vancore btn-vancore-outline me-2">Login</a>
-                    <a href="#" class="btn btn-vancore btn-vancore-primary">Contact sales</a>
+                    <a href="#" class="btn btn-vancore btn-vancore-outline me-2"
+                        style="background : transparent; color: #1D2939;">Login</a>
+                    <a href="#" class="btn btn-vancore btn-vancore-primary btn-lg position-relative">
+                        <span class="default-text">Create free account</span>
+                        <span class="hover-text">Get started now</span>
+                    </a>
                 </div>
             </div>
         </div>
     </nav>
 
 
+
     <section class="hero-section py-5">
         <div class="container">
             <div class="row justify-content-center text-center">
-                <div class="col-lg-8 mb-5">
+                <div class="col-lg-8 mb-5" style="text-align: center;">
                     <h1 class="hero-title fw-bold mb-3">Smart commerce for growing businesses</h1>
-                    <p class="hero-subtitle mb-4">Run your business better with powerful tools for sales, inventory, payments, and growth, all in one place.</p>
+                    <p class="hero-subtitle mb-4">Run your business better with powerful tools for sales, inventory,
+                        payments, and growth, all in one place.</p>
                     <div class="d-flex gap-3 justify-content-center">
-                        <a href="#" class="btn btn-vancore btn-vancore-primary btn-lg">Create free account</a>
-                        <a href="#" class="btn btn-vancore btn-vancore-outline btn-lg">Contact sales</a>
+                        <a href="#" class="btn btn-vancore btn-vancore-primary btn-lg position-relative">
+                            <span class="default-text">Create free account</span>
+                            <span class="hover-text">Get started now</span>
+                        </a>
+                        <a href="#" id="primaryBtn" class="btn btn-vancore btn-vancore-outline btn-lg"
+                            style="border: none; color: #1D2939;">Contact sales</a>
                     </div>
                 </div>
-            
+
                 <div class="col-lg-8 position-relative">
                     <div class="image-fade-container">
                         <img src="images/hero-mockup.png" alt="Vancore Dashboard" class="img-fluid">
@@ -198,218 +206,265 @@
             </div>
         </div>
     </section>
-  
 
-    <!-- Partners Section -->
+    <!---------------- Partner Section---------------->
     <section class="partners-section">
         <div class="container">
             <h5 class="section-title">Trusted by 10K+ Businesses</h5>
-            <div class="partners-grid">
-                <img src="images/up-unified-payment-logo.png" alt="UP Unified Payment" class="partner-logo">
-                <img src="images/hope-bank-logo.png" alt="Hope Bank" class="partner-logo">
-                <img src="images/payattitude-logo.png" alt="PayAttitude" class="partner-logo">
-                <img src="images/titles-logo.png" alt="Titles" class="partner-logo">
-                <img src="images/edusponsor-logo.png" alt="EduSponsor" class="partner-logo">
-                <img src="images/oracle-logo.png" alt="Oracle" class="partner-logo">
-                <img src="images/mastercard-logo.png" alt="Mastercard" class="partner-logo">
+            <div class="partners-slider">
+                <div class="partners-track">
+                    <img src="images/up-unified-payment-logo.jpg" alt="UP Unified Payment" class="partner-logo">
+                    <img src="images/hope-bank.png" alt="Hope Bank" class="partner-logo">
+                    <img src="images/pay-attitude.png" alt="PayAttitude" class="partner-logo">
+                    <img src="images/titles-logo.png" alt="Titles" class="partner-logo">
+                    <img src="images/edusponsor-logo.jpg" alt="EduSponsor" class="partner-logo">
+                    <img src="images/oracle-logo.png" alt="Oracle" class="partner-logo">
+                    <img src="images/master-card.png" alt="Mastercard" class="partner-logo">
+                    <!-- Repeat logos for seamless loop -->
+                    <img src="images/up-unified-payment-logo.jpg" alt="UP Unified Payment" class="partner-logo">
+                    <img src="images/hope-bank.png" alt="Hope Bank" class="partner-logo">
+                    <img src="images/pay-attitude.png" alt="PayAttitude" class="partner-logo">
+                    <img src="images/titles-logo.png" alt="Titles" class="partner-logo">
+                    <img src="images/edusponsor-logo.png" alt="EduSponsor" class="partner-logo">
+                    <img src="images/oracle-logo.png" alt="Oracle" class="partner-logo">
+                    <img src="images/mastercard.png" alt="Mastercard" class="partner-logo">
+                </div>
             </div>
         </div>
     </section>
 
+
     <!-- Features Section -->
     <section class="features-section">
         <div class="container">
-            <div class="text-center mb-5">
+            <h6 class="text-primary">HOW IT WORKS</h6>
+            <div class="text-left mb-5">
                 <h2 class="display-5 fw-bold mb-3">Everything you need, in one place</h2>
-                <p class="lead text-muted">Manage your orders, get paid, track sales and more</p>
+                <p class="lead text-muted">From inventory to payments, Vancore gives you the tools to run, grow, and
+                    scale your business; your way.</p>
             </div>
-            
-            <!-- Feature 1 -->
-            <div class="row feature-card feature-card-1 g-0 mb-4">
-                <div class="col-md-7 p-5 feature-1" style="background: #EDCBF7;">
-                    <h3 class="fw-bold mb-3">Launch your online store and start selling in minutes</h3>
-                    <p class="mb-0">Upload your products, manage your systems, and manage orders right from your dashboard.</p>
+            <div class="feature-container">
+                <!-- Feature 1 -->
+                <div class="row feature-card feature-card-1 g-0 mb-4">
+                    <div class="col-md-7 p-5 feature-1" style="background: linear-gradient(135deg, #F9E7FF, #E8C1F4);">
+                        <h3 class="fw-bold mb-3">Launch your online store and start selling in minutes</h3>
+                        <p class="mb-0">Upload your products, manage your systems, and manage orders right from your
+                            dashboard.</p>
+                    </div>
+                    <div class="col-md-5">
+                        <img src="images/Features Section Assets/Container-1.png" alt="Online Store" class="feature-img">
+                    </div>
                 </div>
-                <div class="col-md-5">
-                    <img src="images/Features Section Assets/Container-1.png" alt="Online Store" class="feature-img">
+
+                <!-- Feature 2 -->
+                <div class="row feature-card feature-card-2 g-0 mb-4"
+                    style="background: linear-gradient(135deg, #E7F0FF, #C1D4F4);">
+                    <div class="col-md-12 p-5 feature-2">
+                        <h3 class="fw-bold mb-3">Let Vancore handle your orders while you focus on selling</h3>
+                        <p class="mb-0">Vancore updates your inventory after every sale, handles delivery workflows and
+                            sends professional email notifications to customers at every stage, from shipping to delivery
+                            and feedback.</p>
+                    </div>
                 </div>
-            </div>
-            
-            <!-- Feature 2 -->
-            <div class="row feature-card feature-card-2 g-0 mb-4" style="background: #C7D8F6;">
-                <div class="col-md-12 p-5 feature-2">
-                    <h3 class="fw-bold mb-3">Let Vancore handle your orders while you focus on selling</h3>
-                    <p class="mb-0">Vancore updates your inventory after every sale, handles delivery workflows and sends professional email notifications to customers at every stage, from shipping to delivery and feedback.</p>
+
+                <!-- Feature 3 -->
+                <div class="row feature-card feature-card-3 g-0 mb-4">
+                    <div class="col-md-5">
+                        <img src="images/Features Section Assets/Container-3.png" alt="Inventory Tracking"
+                            class="feature-img">
+                    </div>
+                    <div class="col-md-7 p-5 feature-3" style="background: linear-gradient(135deg, #E7FFE7, #C1F4C4);">
+                        <h3 class="fw-bold mb-3">Track your stock in real-time, without guesswork</h3>
+                        <p class="mb-0">Get automatic inventory adjustments, so your stock is always accurate — and you're
+                            never out of supply.</p>
+                    </div>
                 </div>
-            </div>
-            
-            <!-- Feature 3 -->
-            <div class="row feature-card feature-card-3 g-0 mb-4">
-                <div class="col-md-5">
-                    <img src="images/Features Section Assets/Container-3.png" alt="Inventory Tracking" class="feature-img">
+
+                <!-- Feature 4 -->
+                <div class="row feature-card feature-card-4 g-0 mb-4">
+                    <div class="col-md-7 p-5 feature-4 a" style="background: linear-gradient(135deg, #FFF4E7, #F4DDC1);">
+                        <h3 class="fw-bold mb-3">Get paid faster, securely, and on your terms</h3>
+                        <p class="mb-0">Vancore integrates secure payment gateways for easy checkout and quicker settlements
+                            for your business.</p>
+                    </div>
+                    <div class="col-md-5">
+                        <img src="images/Features Section Assets/Container-6.png" alt="Payments" class="feature-img">
+                    </div>
                 </div>
-                <div class="col-md-7 p-5 feature-3" style="background: #C7F6CA;">
-                    <h3 class="fw-bold mb-3">Track your stock in real-time, without guesswork</h3>
-                    <p class="mb-0">Get automatic inventory adjustments, so your stock is always accurate — and you're never out of supply.</p>
-                </div>
-            </div>
-            
-            <!-- Feature 4 -->
-            <div class="row feature-card feature-card-4 g-0 mb-4">
-                <div class="col-md-7 p-5 feature-4" style="background: #F5DFC5;">
-                    <h3 class="fw-bold mb-3">Get paid faster, securely, and on your terms</h3>
-                    <p class="mb-0">Vancore integrates secure payment gateways for easy checkout and quicker settlements for your business.</p>
-                </div>
-                <div class="col-md-5">
-                    <img src="images/Features Section Assets/Container-6.png" alt="Payments" class="feature-img">
-                </div>
-            </div>
-            
-            <!-- Feature 5 -->
-            <div class="row feature-card feature-card-5 g-0 feature-5" style="background: #C0C1F4;">
-                <div class="col-md-12 p-5">
-                    <h3 class="fw-bold mb-3">Send invoices, track sales, and stay organized</h3>
-                    <p class="mb-0">Generate automated invoices and reports to stay on top of your business performance effortlessly.</p>
+
+                <!-- Feature 5 -->
+                <div class="row feature-card feature-card-5 g-0 feature-5"
+                    style="background: linear-gradient(135deg, #E7E7FF, #C1C1F4);">
+                    <div class="col-md-12 p-5">
+                        <h3 class="fw-bold mb-3">Send invoices, track sales, and stay organized</h3>
+                        <p class="mb-0">Generate automated invoices and reports to stay on top of your business performance
+                            effortlessly.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <section class="how-it-works py-5">
-        <div class="container" style="max-width: 50%;">
-          <div class="text-start mb-4">
-            <h6 class="text-primary">HOW IT WORKS</h6>
-            <h2 class="fw-bold text-white">It takes only 5 minutes</h2>
-          </div>
-      
-          <!-- Step 1 -->
-          <div class="step d-flex align-items-start mb-4 position-relative">
-            <div class="step-number">01</div>
-            <div class="step-line"></div>
-            <div class="side">
-              <h5 class="fw-bold text-white">Sign up</h5>
-              <p class="text">Download the app on your store, create an account with your name, phone number and email.</p>
+        <div class="col-md-12 container">
+            <div class="text-start mb-6">
+                <h6 class="text-primary">HOW IT WORKS</h6>
+                <h2 class="fw-bold text-white">It takes only 5 minutes</h2>
             </div>
-          </div>
 
-      
-          <!-- Step 2 -->
-          <div class="step d-flex align-items-start mb-4 position-relative">
-            <div class="step-number">02</div>
-            <div class="step-line"></div>
-            <div class="side">
-              <h5 class="fw-bold text-white">Add product</h5>
-              <p class="text">Setup your store, with product photos and specifications.</p>
+            <div class="content">
+                <div class="steps">
+                    <div class="step">
+                        <div class="step-number">01</div>
+                        <div class="step-line"></div>
+                        <div class="side">
+                            <h5 class="fw-bold text-white">Sign up</h5>
+                            <p>Download the app on your store, create an account with your name, phone number and email.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-number">02</div>
+                        <div class="step-line"></div>
+                        <div class="side">
+                            <h5 class="fw-bold text-white">Add product</h5>
+                            <p>Setup your store, with product photos and specifications.</p>
+                        </div>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-number">03</div>
+                        <div class="step-line"></div>
+                        <div class="side">
+                            <h5 class="fw-bold text-white">Start selling</h5>
+                            <p>Share your store link, start selling and accepting payments.</p>
+                            <a href="#" class="btn btn-primary mt-3">Get started for free</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-container">
+                    <img id="device-image" src="images/s8.png" alt="Device">
+                    <div id="image-overlay"></div>
+                </div>
             </div>
-          </div>
-      
-          <!-- Step 3 -->
-          <div class="step d-flex align-items-start mb-4 position-relative">
-            <div class="step-number">03</div>
-            <div class="side">
-              <h5 class="fw-bold text-white">Start selling</h5>
-              <p class="text">Share your store link, start selling and accepting payments.</p>
-              <a href="#" class="btn btn-primary mt-3">Get started for free</a>
-            </div>
-          </div>
-      
-        </div>
-        <div class="text-center mb-5">
-            <img src="images/tablet-interface.jpg" alt="App Interface" class="img-fluid how-img">
-          </div>
     </section>
-      
-    <!-- Connect With Us Section -->  
+
     <section class="connect-section py-5 bg-light">
-        <div class="container text-center">
-            <h2 class="section-title mb-4">Connect your platforms</h2>
-            <p class="section-description text-muted mb-5">These business tools and many more to come, work well with your Vancore app</p>
-    
-            <div class="icon-connection-wrapper">
-                <div class="central-logo-wrapper">
-                    <img src="images/vancore-logo.png" alt="Vancore Logo" class="central-logo">
-                     <p class="logo-description text-muted mt-3">These business tools and many more to come, work well with your Vancore app</p>
-                </div>
-                <div class="platform-icon platform-icon-1">
-                    <img src="images/linkedin-icon.jpg" alt="Platform 1">
-                </div>
-                <div class="platform-icon platform-icon-2">
-                    <img src="images/sctack-icon.jpg" alt="Platform 2">
-                </div>
-                <div class="platform-icon platform-icon-3">
-                    <img src="images/x-icon.jpg" alt="Platform 3">
-                </div>
-                <div class="platform-icon platform-icon-4">
-                    <img src="images/whatsapp.jpg" alt="Platform 4">
-                </div>
-                <div class="platform-icon platform-icon-5">
-                    <img src="images/google.jpg" alt="Platform 5">
-                </div>
-                 <div class="platform-icon platform-icon-6">
-                    <img src="images/instagram.jpg" alt="Platform 6">
-                </div>
-    
-                <svg class="connection-lines" id="connection-canvas"></svg>
-    
-            </div>
-            
-        </div>
-    </section>
+    <div class="container text-center">
+        <h2 class="section-title mb-4">Connect your platforms</h2>
+        <p class="section-description text-muted mb-5">These business tools and many more to come, work well with
+            your Vancore app</p>
 
-    <!-- Testimonial Slides -->
+        <div class="icon-connection-wrapper">
+            <div class="central-logo-wrapper">
+                <img src="images/vancore-logo.png" alt="Vancore Logo" class="central-logo" id="vancore-logo">
+                <p class="logo-description text-muted mt-3">These business tools and many more to come, work well
+                    with your Vancore app</p>
+            </div>
+            <div class="platform-icon platform-icon-1" id="linkedin-icon">
+                <img src="images/linkedin-icon.jpg" alt="Platform 1">
+            </div>
+            <div class="platform-icon platform-icon-2" id="stack-icon">
+                <img src="images/sctack-icon.jpg" alt="Platform 2">
+            </div>
+            <div class="platform-icon platform-icon-3" id="x-icon">
+                <img src="images/x-icon.jpg" alt="Platform 3">
+            </div>
+            <div class="platform-icon platform-icon-4" id="whatsapp-icon">
+                <img src="images/whatsapp.jpg" alt="Platform 4">
+            </div>
+            <div class="platform-icon platform-icon-5" id="google-icon">
+                <img src="images/google.jpg" alt="Platform 5">
+            </div>
+            <div class="platform-icon platform-icon-6" id="instagram-icon">
+                <img src="images/instagram.jpg" alt="Platform 6">
+            </div>
+
+            <svg class="connection-lines" id="connection-canvas"></svg>
+
+        </div>
+
+    </div>
+
     <section class="wall-of-love">
         <div class="text-center header">
-          <p class="subheading">WALL OF LOVE</p>
-          <h2>Why 10,000 businesses love Vancore</h2>
-          <p class="description">These business tools and many more to come, work well with your Vancore app</p>
+            <p class="subheading">WALL OF LOVE</p>
+            <h2>Why 10,000 businesses love Vancore</h2>
+            <p class="description">These business tools and many more to come, work well with your Vancore app</p>
         </div>
-      
-        <!-- Swiper -->
+
         <div class="swiper testimonial-swiper">
-          <div class="swiper-wrapper">
-            <!-- Testimonial 1 -->
-            <div class="swiper-slide">
-              <div class="testimonial-card">
-                <img src="images/Wall of Love Assets/flairstore-small.png" alt="Testimonial">
-                <div class="overlay">
-                  <p class="company">THE FLAIR STORE</p>
-                  <p class="quote">“I have never seen an excellent app like Vancore! Their business analytics feature that helped me navigate business growth so much better.”</p>
-                  <div class="author">
-                    <img src="images/user1.png" alt="Founder">
-                    <div>
-                      <p class="name">Chukwudumebi Asiagwo</p>
-                      <p class="role">Founder, The Flair Store</p>
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                    <div class="testimonial-card">
+                        <img src="images/Wall of Love Assets/flairstore-small.png" alt="Testimonial">
+                        <div class="overlay">
+                            <img class="quote-img" src="images/flair-store.png" alt="Flair Store Logo">
+                            <p class="quote">“I have never seen an excellent app like Vancore! Their business analytics
+                                feature helped me navigate business growth so much better.”</p>
+                            <div class="author">
+                                <img src="images/user.jpeg" alt="Chukwudumebi Asiagwo">
+                                <div class="comments">
+                                    <p class="name">Chukwudumebi Asiagwo</p>
+                                    <p class="role">Founder, The Flair Store</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                  </div>
                 </div>
-              </div>
+
+                <div class="swiper-slide">
+                    <div class="testimonial-card">
+                        <img src="images/Wall of Love Assets/Bolt.png" alt="Bolt">
+                        <div class="overlay">
+                            <img class="quote-img" src="images/bolt-logo.png" alt="Bolt Logo">
+                            <p class="quote">“Vancore streamlined our operations and improved customer engagement. It’s
+                                a game-changer!”</p>
+                            <div class="author">
+                                <img src="images/user.jpeg" alt="Adebayo Lawal">
+                                <div>
+                                    <p class="name">Adebayo Lawal</p>
+                                    <p class="role">Operations Manager, Bolt</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="testimonial-card">
+                        <img src="images/Wall of Love Assets/trendsta-small.png" alt="Trendsta">
+                        <div class="overlay">
+                            <img class="quote-img" src="images/trendsta.png" alt="Trendsta Logo">
+                            <p class="quote">“A very intuitive app with powerful business tools. Highly recommend to
+                                growing businesses.”</p>
+                            <div class="author">
+                                <img src="images/user.jpeg" alt="Fatima Bello">
+                                <div>
+                                    <p class="name">Fatima Bello</p>
+                                    <p class="role">Founder, Trendsta</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-      
-            <!-- Testimonial 2 -->
-            <div class="swiper-slide">
-              <div class="testimonial-card">
-                <img src="images/Wall of Love Assets/Bolt.png" alt="Bolt">
-                <div class="overlay brand">Bolt</div>
-              </div>
-            </div>
-      
-            <!-- Testimonial 3 -->
-            <div class="swiper-slide">
-              <div class="testimonial-card">
-                <img src="images/Wall of Love Assets/trendsta-small.png" alt="Trendsta">
-                <div class="overlay brand">Trendsta</div>
-              </div>
-            </div>
-          </div>
-      
-          <!-- Swiper Pagination -->
-          <div class="swiper-pagination"></div>
-      
-          <!-- Swiper Navigation Arrows -->
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
+
+            <div class="swiper-pagination"></div>
+
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+        <div class="f-bottom-img">
+            <img src="images/flair-store.png" alt="Flair Store">
+            <img src="images/bolt-logo.png" alt="Bolt">
+            <img src="images/trendsta.png" alt="Trendsta">
         </div>
     </section>
+
 
     <section class="pricing-section">
         <div class="pricing-header">
@@ -417,16 +472,15 @@
             <h2>Choose the perfect plan for your needs</h2>
             <p>Simple, transparent pricing that grows with you. Try any plan free for 30 days.</p>
         </div>
-        
+
         <div class="phone-displays">
-            <!-- Starter Plan -->
             <div class="phone">
                 <div class="phone-screen">
                     <div class="plan">
                         <h4>Starter</h4>
                         <div class="price">$0.00<span>/month</span></div>
                         <p>For new businesses still figuring things out.</p>
-                        <button class="black-cta-button">Continue for free</button>
+                        <button class="black-cta-button cta-button">Continue for free</button>
                         <ul class="features">
                             <li><span class="feature-marker"></span>Feature 1</li>
                             <li><span class="feature-marker"></span>Feature 2</li>
@@ -437,16 +491,21 @@
                     </div>
                 </div>
             </div>
-            
-            <!-- Professional Plan -->
+
             <div class="phone">
-                <div class="phone-screen">
+                <div class="phone-screen" style="background: #101828; color: #FFFFFF;">
                     <div class="plan">
-                        <h4>Professional</h4>
-                        <div class="price">$29.99<span>/month</span></div>
-                        <p>For growing businesses with increasing needs.</p>
-                        <button class="blue-cta-button">Start free trial</button>
-                        <ul class="features">
+                        <div class="top">
+                            <h4>Standard</h4>
+                            <div class="most-popular-tag">
+                                <span class="star-icon">★</span>
+                                Most Popular
+                            </div>
+                        </div>
+                        <div class="price" style="color: #FFFFFF;">$29.99<span>/month</span></div>
+                        <p style="color: #D1D5DB;">For growing businesses with increasing needs.</p>
+                        <button class="blue-cta-button cta-button">Start free trial</button>
+                        <ul class="features" style="color: #D1D5DB;">
                             <li><span class="feature-marker"></span>All Starter features</li>
                             <li><span class="feature-marker"></span>Advanced analytics</li>
                             <li><span class="feature-marker"></span>Priority support</li>
@@ -456,15 +515,14 @@
                     </div>
                 </div>
             </div>
-            
-            <!-- Enterprise Plan -->
+
             <div class="phone">
                 <div class="phone-screen">
                     <div class="plan">
                         <h4>Enterprise</h4>
                         <div class="price">$99.99<span>/month</span></div>
                         <p>For established businesses with complex needs.</p>
-                        <button class="black-cta-button">Start free trial</button>
+                        <button class="black-cta-button cta-button">Start free trial</button>
                         <ul class="features">
                             <li><span class="feature-marker"></span>All Professional features</li>
                             <li><span class="feature-marker"></span>Dedicated account manager</li>
@@ -477,7 +535,7 @@
             </div>
         </div>
     </section>
-
+    
     <!----- FAQS  -->
     <section class="faq-section">
         <div class="faq-container faq-row">
@@ -486,37 +544,64 @@
                 <h2>Some of the things you may want to know</h2>
                 <p class="subheading">We answered questions so you don't have to ask them.</p>
             </div>
-            
-            <div class="faq-items faq-row">
+
+            <div class="faq-items">
                 <div class="faq-item">
-                    <h3>What can the Vancore app do for me?</h3>
-                    <button class="expand-button">+</button>
+                    <div class="faq-header">
+                        <h3>What can the Vancore app do for me?</h3>
+                        <button class="expand-button">+</button>
+                    </div>
+                    <div class="faq-answer">
+                        <p>The Vancore app provide you with tools you can use to create website to sell online and
+                            manage your business.</p>
+                    </div>
                 </div>
-                
+
                 <div class="faq-item">
-                    <h3>What kind of products can I sell?</h3>
-                    <button class="expand-button">+</button>
+                    <div class="faq-header">
+                        <h3>What kind of products can I sell?</h3>
+                        <button class="expand-button">+</button>
+                    </div>
+                    <div class="faq-answer">
+                        <p>The Vancore app provide you with tools you can use to create website to sell online and
+                            manage your business.</p>
+                    </div>
                 </div>
-            
+
                 <div class="faq-item">
-                    <h3>How long does it take to setup a store?</h3>
-                    <button class="expand-button">+</button>
+                    <div class="faq-header">
+                        <h3>How long does it take to setup a store?</h3>
+                        <button class="expand-button">+</button>
+                    </div>
+                    <div class="faq-answer">
+                        <p>The Vancore app provide you with tools you can use to create website to sell online and
+                            manage your business.</p>
+                    </div>
                 </div>
-                
+
                 <div class="faq-item">
-                    <h3>What's the cost for setting up a store?</h3>
-                    <button class="expand-button">+</button>
+                    <div class="faq-header">
+                        <h3>What's the cost for setting up a store?</h3>
+                        <button class="expand-button">+</button>
+                    </div>
+                    <div class="faq-answer">
+                        <p>The Vancore app provide you with tools you can use to create website to sell online and
+                            manage your business.</p>
+                    </div>
                 </div>
             </div>
+
         </div>
     </section>
+
 
     <!------------------Order management ------->
     <section class="hero-section">
         <div class="hero-container">
             <div class="hero-content">
                 <h1>Get smart order management at your fingertips</h1>
-                <p class="hero-description">We make sure more of your money goes to those you love, not to high service fees.</p>
+                <p class="hero-description">We make sure more of your money goes to those you love, not to high service
+                    fees.</p>
                 <div class="download-cta">
                     <img src="images/qrcode.jpg" alt="Download on the App Store" class="qrcode">
                     <div class="cta-text">
@@ -529,68 +614,64 @@
                 </div>
             </div>
             <div class="hero-image">
-                <!-- Image placeholder - replace with actual image -->
                 <img src="images/person-with-phone.jpg" alt="Person using Vancore app" class="phone-image">
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-<footer class="footer-section">
-    <div class="container">
-        <div class="footer-content">
-            <!-- Logo and Social -->
-            <div class="footer-brand">
-                <img src="images/Vancore-logo-black.jpg" alt="Vancore Logo" class="footer-logo">
-                <div class="social-links">
-                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                    <a href="#" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
-                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+    <footer class="footer-section">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="images/Vancore-logo-black.jpg" alt="Vancore Logo" class="footer-logo">
+                    <div class="social-links">
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <h3 class="footer-heading">Company</h3>
+                    <ul>
+                        <li><a href="#">About Vancore</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-contact">
+                    <h3 class="footer-heading">Support</h3>
+                    <ul>
+                        <li><i class="fas fa-phone-alt"></i> +1 701 358 2142</li>
+                        <li><i class="fas fa-phone-alt"></i> +1 701 358 2143</li>
+                        <li><i class="fas fa-envelope"></i> info@vancore.ng</li>
+                    </ul>
                 </div>
             </div>
 
-            <!-- Company Links -->
-            <div class="footer-links">
-                <h3 class="footer-heading">Company</h3>
-                <ul>
-                    <li><a href="#">About Vancore</a></li>
-                    <li><a href="#">Careers</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                </ul>
-            </div>
-
-            <!-- Support Info -->
-            <div class="footer-contact">
-                <h3 class="footer-heading">Support</h3>
-                <ul>
-                    <li><i class="fas fa-phone-alt"></i> +1 701 358 2142</li>
-                    <li><i class="fas fa-phone-alt"></i> +1 701 358 2143</li>
-                    <li><i class="fas fa-envelope"></i> info@vancore.ng</li>
-                </ul>
+            <div class="footer-bottom">
+                <p class="copyright">Copyright © 2025 Vancore. All rights reserved.</p>
+                <div class="legal-links">
+                    <a href="#">Terms & Service</a>
+                    <a href="#">Privacy Policy</a>
+                </div>
             </div>
         </div>
+    </footer>
 
-        <!-- Copyright and Legal -->
-        <div class="footer-bottom">
-            <p class="copyright">Copyright © 2025 Vancore. All rights reserved.</p>
-            <div class="legal-links">
-                <a href="#">Terms & Service</a>
-                <a href="#">Privacy Policy</a>
-            </div>
-        </div>
-    </div>
-</footer>
-
-<!-- Font Awesome -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
 
-<!-- Swiper JS -->
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-<!-- Bootstrap JS Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-<script src="js/scripts.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/scripts.js"></script>
 
 </body>
+
 </html>
