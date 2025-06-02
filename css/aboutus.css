@@ -1,0 +1,324 @@
+body {
+  background-color: #f9fafb;
+  font-family: 'Sora', sans-serif;
+}
+
+* {
+    font-family: 'Sora' sans-serif;
+}
+
+/* About Section 1 */
+.about-section .container .text {
+    width: 100%;
+    height: 212px;
+    top: 174px;
+    padding-right: 250px;
+    padding-left: 250px;
+    gap: 8px;
+    text-align: center;
+    align-items: center;
+}
+
+.about-section .container .text-primary {
+    font-family: 'Sora', sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 2px;
+    text-align: center;
+    color: #2575E5;
+}
+
+.about-section small {
+  letter-spacing: 1px;
+}
+
+.about-section .container .text .helping-africa {
+    width: 812px;
+    height: 120px;
+}
+
+.about-section h1 {
+  color: #101828;
+  line-height: 1.3;
+  font-weight: 600;
+  font-size: 56px;
+  line-height: 60px;
+  letter-spacing: -2%;
+  text-align: center;
+}
+
+.about-section p {
+  margin: 0 auto;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -2%;
+  text-align: center;
+  color: #475467;
+  width: 692px;
+  height: 48px;
+
+
+}
+
+.about-image-card {
+  /*max-width: 800px;*/
+  margin: 60px auto;
+  width: 1019px;
+  height: 618px;
+  box-shadow: 0px 45px 45px 0px #00000017;
+
+}
+
+.about-image-card img {
+  display: block;
+  width: 1019px;
+  height: 618px;
+  border-radius: 20px;
+}
+
+
+
+/* About Us Section 2 */
+.about-us-section {
+    width: 100%;
+    padding: 80px 100px;
+    position: relative;
+    min-height: 300px;
+    z-index: 1;
+    background-color: #F5F8F7; /* Background color for the section */
+}
+
+.about-us-section::before {
+    content: "";
+    position: absolute;
+    top: 27px;    /* <--- Set top, left, width, height for absolute positioning */
+    left: 50px;   /* <--- Set top, left, width, height for absolute positioning */
+    width: 54px; /* <--- CRUCIAL: Give the pseudo-element full width */
+    height: 120px; /* <--- CRUCIAL: Give the pseudo-element full height */
+    background: #F5F8F7; /* This will be the solid background color */
+    background-image: url("../images/Vancore-logo.png"); /* Your image */
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-size: contain; /* Or 'cover' or specific dimensions */
+    opacity: 5%;
+    z-index: -1; /* <--- CRUCIAL: Puts the pseudo-element behind the content */
+}
+
+.container .row {
+    width: 1240px;
+    gap: 40px;
+}
+
+.container .row .col-lg-5 {
+    width: 519px;
+    height: 111px;
+    gap: 8px;
+}
+
+.container .row .col-lg-7 {
+    width: 649px;
+    height: 414px;
+}
+
+.about-us-section small {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 1px;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--primary-main, #0A6DEE);
+
+}
+
+.container .col-lg-5 {
+    text-align: start;
+}
+
+.about-us-section h2 {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 44px;
+  letter-spacing: -1px;
+  color: #0D0D12;
+}
+
+.about-us-section p {
+  color: #36394A;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: -2%;
+}
+
+.about-us-section img {
+    width: 784px;
+    height: 538px;
+}
+
+/* Our People Section */
+.our-people-section {
+  background-color: #f9fafb;
+  padding: 80px 100px;
+  width: 100%;
+}
+
+.our-people-section small {
+  letter-spacing: 1px;
+}
+
+.our-people-section h2 {
+  line-height: 1.3;
+}
+
+.our-people-section p {
+  color: #5a5a5a;
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+.object-fit-cover {
+  object-fit: cover;
+  height: auto;
+  display: block;
+}
+
+.our-people-section .container .row {
+    display: flex;
+    flex-direction: row;
+    gap: 0.01px;
+    column-gap: 0.01px;
+}
+
+.our-people-section .container .row .col-6 img {
+    width: 434px;
+    height: 600px;
+    border-radius: 12px;
+
+}
+
+.our-people-section .container .row .col-4 img {
+    width: 323px;
+    height: 293px;
+    border-radius: 12px;
+}
+
+@media (max-width: 767.98px) {
+  .object-fit-cover {
+    height: auto;
+  }
+}
+
+/* Leadership Section */
+.leadership-section {
+    display: flex;
+    flex-direction: column;
+  background-color: #f9fafb;
+  align-items: center;
+  text-align: center;
+  padding: 80px 80px;
+  width: 100%;
+}
+
+.leadership-section .fw-bold {
+    font-weight: 600;
+    font-size: 44px;
+    line-height: 64px;
+    letter-spacing: -2%;
+    text-align: center;
+
+}
+
+.leadership-section .col-4 {
+    height: 430px;
+    width: 350px;
+}
+
+.leadership-section img {
+    width: 360px;
+    height: 362px;
+    border-radius: 13px;
+    margin-bottom: 20px;
+}
+
+.leadership-section .row .col-6 h5 {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0%;
+    color: #0A0A0A;
+    text-align: left;
+}
+
+.leadership-section .row .col-6 p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0%;
+    color: #667085;
+    text-align: left;
+}
+
+.resources-section {
+    padding: 80px;
+    
+}
+
+.resources-section .row {
+    width: 1240px;
+
+}
+
+.resources-section .row .col-6 {
+    background: #FFFFFF;
+    width: 392px;
+    height: 433px;
+    border-radius: 12px;
+    box-shadow: 0px 8px 16px 0px #1B1B1B0A,
+                0px 2px 8px 0px #1B1B1B0A;
+                padding: 0;
+    border-radius: 12px;
+}
+
+.resources-section .row .col-6 img {
+    border-radius: 12px 12px  0px 0;
+}
+
+.resources-section .row .col-6 .about {
+    padding: 20px;
+}
+
+.resources-section .row .col-6 .about small {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 100%;
+    letter-spacing: 0.78px;
+    text-transform: uppercase;
+
+}
+
+.resources-section .row .col-6 .about h3 {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: -2%;
+}
+
+.resources-section .row .col-6 .about p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: -2%;
+    vertical-align: middle;
+    width: 158px;
+    height: 44px;
+    padding: 10px 24px;
+    gap: 8px;
+    border-radius: 8px;
+    background: #EEEEEE;
+
+}
+
+
